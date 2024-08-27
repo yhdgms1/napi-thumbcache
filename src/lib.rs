@@ -16,8 +16,8 @@ extern crate napi_derive;
 ///   console.log(thumb) // Uint8Array
 /// }
 /// ```
-pub fn get_thumb(path: String, size: u8) -> Option<Uint8Array> {
-  if let Ok(hbitmap) = get_hbitmap(&path, size as i32, size as i32, 0x08) {
+pub fn get_thumb(path: String, size: i32) -> Option<Uint8Array> {
+  if let Ok(hbitmap) = get_hbitmap(&path, size, size, 0x08) {
     let bitmap = get_bitmap_bits(hbitmap, true);
 
     return Some(Uint8Array::from(bitmap));

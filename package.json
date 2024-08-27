@@ -1,6 +1,6 @@
 {
   "name": "thumbcache",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -29,6 +29,6 @@
   },
   "packageManager": "yarn@4.4.1",
   "optionalDependencies": {
-    "thumbcache-win32-x64-msvc": "0.0.0"
+    "thumbcache-win32-x64-msvc": "0.1.0"
   }
 }
